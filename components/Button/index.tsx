@@ -15,7 +15,7 @@ export const Button = ({
       className={`text-base py-3 px-10 rounded-xl ${
         disabled
           ? "text-black bg-gray-50"
-          : "bg-blue-500 text-white hover:bg-blue-700"
+          : "bg-blue-600 text-white hover:bg-blue-700"
       }`}
       onClick={onClick}
     >

@@ -1,1 +1,5 @@
-{}
+{
+  "ErrorsMessages": {
+    "unexpected-error": "An unexpected error occurred"
+  }
+}

@@ -8,6 +8,14 @@ export class Right<L, A> {
     this.value = value;
   }
 
+  forceToRight(): A {
+    return this.value;
+  }
+
+  forceToLeft(): L {
+    return this.value as unknown as L;
+  }
+
   isLeft(): this is Left<L, A> {
     return false;
   }

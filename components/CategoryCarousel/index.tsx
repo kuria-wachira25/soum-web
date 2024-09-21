@@ -1,13 +1,13 @@
 "use client";
 
 import Image from "next/image";
-import { GetCategoriesResponse } from "@libs/http/category/type";
 import { useScroll } from "@hooks/useScroll";
 import { InView } from "react-intersection-observer";
 import { ArrowButton } from "@components/ArrowButton";
+import { FetchCategoriesResponse } from "@declarations/category/category.type";
 
 export type CategoryCarouselProps = {
-  categories: GetCategoriesResponse["responseData"];
+  categories: FetchCategoriesResponse["responseData"];
 };
 
 export const CategoryCarousel = ({
@@ -29,7 +29,7 @@ export const CategoryCarousel = ({
             return (
               <InView
                 as="div"
-                className="flex flex-col gap-3 items-center p-5 border hover:border-blue-500 border-white rounded"
+                className="flex flex-col gap-3 items-center p-5 border hover:border-blue-600 border-white rounded"
                 key={index}
               >
                 <Image

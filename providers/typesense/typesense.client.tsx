@@ -7,7 +7,7 @@ import {
   InstantSearchNextProps,
 } from "react-instantsearch-nextjs";
 
-const typesenseInstantSearchAdapter = new TypesenseInstantSearchAdapter({
+export const typesenseInstantSearchAdapter = new TypesenseInstantSearchAdapter({
   server: typesenseConfig,
   additionalSearchParameters: {
     preset: "default-search",

@@ -16,7 +16,7 @@ export const ArrowButton = ({
       className={`text-base p-5 rounded-full ${
         disabled
           ? "text-black bg-gray-50"
-          : "bg-blue-500 text-white hover:bg-blue-700"
+          : "bg-blue-600 text-white hover:bg-blue-700"
       }`}
       onClick={onClick}
     >
